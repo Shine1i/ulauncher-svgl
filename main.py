@@ -2,7 +2,7 @@ import json
 import os
 import requests
 
-# Standard headers for API requests to avoid 304
+# Standard headers for API requests to avoid 403 lol
 HEADERS = {
     'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36',
     'Accept': 'application/json, text/plain, */*',
@@ -73,7 +73,6 @@ class KeywordQueryEventListener(EventListener):
         temp_dir = "/tmp/ulauncher_svgl_search"
         os.makedirs(temp_dir, exist_ok=True)
 
-        # Process results (limit to first 10 for performance)
         for entry in results[:10]:
             # Get the SVG URL
             route = entry.get("route", "")
