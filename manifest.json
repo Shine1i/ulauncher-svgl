@@ -1,0 +1,19 @@
+{
+  "required_api_version": "2",
+  "name": "SVGL Logo Search",
+  "description": "Search and copy SVG logos via SVGL API",
+  "developer_name": "Wasim Said",
+  "icon": "images/icon.png",
+  "options": {
+    "query_debounce": 0.5
+  },
+  "preferences": [
+    {
+      "id": "svgl_search",
+      "type": "keyword",
+      "name": "SVG Logo Search",
+      "description": "Trigger for SVGL search",
+      "default_value": "svg"
+    }
+  ]
+}
